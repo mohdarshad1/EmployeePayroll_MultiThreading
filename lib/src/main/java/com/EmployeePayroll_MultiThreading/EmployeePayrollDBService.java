@@ -53,7 +53,7 @@ public class EmployeePayrollDBService {
 				String name = resultSet.getString("name");
 				String gender = resultSet.getString("Gender");
 				double salary = resultSet.getDouble("salary");
-				LocalDate startDate = resultSet.getDate("startDate").toLocalDate();
+				LocalDate startDate = resultSet.getDate("start").toLocalDate();
 				employeePayrollList.add(new EmployeePayrollData(emp_id, name, gender, salary, startDate));
 			}
 		} catch (Exception e) {
